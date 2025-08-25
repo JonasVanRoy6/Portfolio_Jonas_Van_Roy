@@ -120,8 +120,8 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Student",
+    company_name: "Thomas More Hogeschool",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "September 2022 - Juli 2025",
