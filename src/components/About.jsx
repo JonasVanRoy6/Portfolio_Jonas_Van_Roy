@@ -47,9 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Ik ben een juist afgestudeerde student met kennis in TypeScript,
-        JavaScript, HTML, CSS en ervaring met frameworks zoals React, Node.js, Vue.js en
-        Three.js. Ik leer snel en werk graag in teamverband om ideeën uit te wisselen en elkaar tot een hoger niveau te tillen.
+        Als recent afgestudeerde heb ik een stevige basis in TypeScript, JavaScript, HTML en CSS, en ervaring met frameworks zoals React, Node.js, Vue.js en Three.js. Ik ben een snelle leerling en werk het liefst samen in een team, waar ik energie krijg van het delen van ideeën en het samen verbeteren van resultaten.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
