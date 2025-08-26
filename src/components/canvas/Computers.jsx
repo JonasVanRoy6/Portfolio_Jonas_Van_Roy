@@ -1,15 +1,12 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import { useGLTF } from "@react-three/drei";
 
-const Computers = ({ isMobile, isAndroid }) => {
-  const computer = useGLTF(
-    isAndroid
-      ? "/desktop_pc/scene_compressed.glb" // lichtere versie voor Android
-      : "/desktop_pc/scene.gltf"           // originele versie
-  );
+const Computers = ({ isMobile }) => {
+  const computer = useGLTF("/desktop_pc/scene.gltf");
 
   return (
     <mesh>
@@ -56,6 +53,11 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  // 👉 Als het Android is: render helemaal geen Canvas
+  if (isAndroid) {
+    return null;
+  }
+
   return (
     <Canvas
       frameloop="demand"
@@ -70,7 +72,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} isAndroid={isAndroid} />
+        <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
