@@ -109,7 +109,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Student",
+    title: "Informatica",
     company_name: "Erasmushogeschool Brussel",
     icon: starbucks,
     iconBg: "#383E56",
@@ -120,7 +120,7 @@ const experiences = [
     ],
   },
   {
-    title: "Student",
+    title: "informatiemanagement en multimedia",
     company_name: "Thomas More Hogeschool",
     icon: tesla,
     iconBg: "#E6DEDD",
@@ -130,6 +130,18 @@ const experiences = [
       "Webontwikkeling & design: Webdevelopment en webdesign, Content Management Systems (CMS), zoals WordPress, Cascading Style Sheets (CSS) voor styling, Animatie en interactieve elementen",
       "Design tools & prototyping: Adobe XD, Figma",
       "Versiebeheer & samenwerking: Github",
+    ],
+  },
+   {
+    title: "Stage webdeveloper",
+    company_name: "Collectiv.",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "februari 2025 - mei 2025",
+    points: [
+      "Webontwikkeling & design: Content Management Systems (CMS), zoals WordPress, Webflow, Cascading Style Sheets (CSS) voor styling, HTML",
+      "Design tools & prototyping: Adobe XD, Figma, Adobe Illustrator",
+      
     ],
   },
   
